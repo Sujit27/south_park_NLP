@@ -1,0 +1,5 @@
+*pickle*
+*.ipynb
+*checkpoint*
+*tflearn*
+*.zip
