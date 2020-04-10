@@ -1,5 +1,11 @@
 *pickle*
-*.ipynb
 *checkpoint*
 *tflearn*
-*.zip
+json_file/
+__pycache__/
+amazon_reviews/
+rnn_basic.ipynb
+south_park_episode_transcripts/
+save/
+data/
+*.pyc
