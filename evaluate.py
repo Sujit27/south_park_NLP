@@ -164,7 +164,7 @@ def runTest(n_layers, hidden_size, reverse, modelFile, beam_size, inp, corpus):
     attn_model = 'dot'
     decoder = LuongAttnDecoderRNN(attn_model, embedding, hidden_size, voc.n_words, n_layers)
 
-    checkpoint = torch.load(modelFile)
+    checkpoint = torch.load(modelFile,map_location=torch.device(device))
     encoder.load_state_dict(checkpoint['en'])
     decoder.load_state_dict(checkpoint['de'])
 
